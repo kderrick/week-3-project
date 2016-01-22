@@ -40,7 +40,7 @@ var numberCounter = function(int) {
 //        pingPongArray = pingPongArray.push("i");
 //       }
 //     };
-      // return pingPongArray
+      // return pingPongArray;
 //   };
 
 
