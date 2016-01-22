@@ -2,10 +2,23 @@
 var numberCounter = function(int) {
   var strings = [];
   for (var i = 1; i <= int; i++) {
-    strings.push(i);
+      strings.push(i);
   };
-  return strings;
+    return strings;
 };
+
+var pingNumberCounter = function(int) {
+  var strings = [];
+  for (var i = 1; i <= int; i++) {
+    if (i % 3 === 0) {
+      strings.push('ping');
+    } else {
+      strings.push(i);
+    }
+  };
+    return strings;
+};
+
 
 // LOGIC FOR PING PONGING (push doesn't work)
 
@@ -29,7 +42,7 @@ var numberCounter = function(int) {
   $(document).ready(function() {
     $('form#ping-pong').submit(function(event) {
       var game = parseInt($('input#game').val());
-      var result = pingPong(game);
+      var result = numberounter(game);
 
 
       if (!game) {

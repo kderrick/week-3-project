@@ -6,6 +6,13 @@ describe("numberCounter", function(){
 });
 
 
+describe("pingNumberCounter", function(){
+  it("will count to the number given one at a time, place in array, and replace numbers divisible by 3 with 'ping'", function() {
+    expect(pingNumberCounter(3)).to.eql([1, 2, 'ping']);
+  });
+});
+
+
 // describe('numberPusher', function() {
 //   it("Will push user input number into an array", function() {
 //     expect(numberPusher(15)).to.eql([15]);
