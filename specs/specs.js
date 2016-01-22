@@ -26,7 +26,7 @@ describe("pingPongNumberCounter", function(){
 
 describe("finalPingPong", function(){
   it("will count to the number given one at a time, place in array, and replace numbers divisible by 3 with 'Ping', disvisible by 5 with 'Pong' and disvisible by 15 with 'PingPong'", function() {
-    expect(finalPingPong(15)).to.eql([ 1, 2,' Ping', 4,' Pong',' Ping', 7, 8,' Ping',' Pong', 11,' Ping', 13, 14,' PingPong']);
+    expect(finalPingPong(15)).to.eql([ 1, 2,' Ping', 4,' Pong',' Ping', 7, 8, ' Ping',' Pong', 11,' Ping', 13, 14,' PingPong']);
   });
 });
 

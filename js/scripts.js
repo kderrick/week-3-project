@@ -1,4 +1,4 @@
-// ----------BEHAVIOR-------------
+// ----------BUSINESS-------------
 
 var numberCounter = function(int) {
   var strings = [];
@@ -62,7 +62,7 @@ var finalPingPong = function(int) {
 
 
 
-// ----------------------USER SPECS-------------------
+// ----------------------USER -------------------
 
 
 
