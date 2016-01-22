@@ -4,8 +4,13 @@
 
 .container {
   max-width: 1000px;
+  background-color: gold;
 }
 
 .finish {
   max-width: 1000px;
+}
+
+body {
+  background-color: #ffcc66
 }
