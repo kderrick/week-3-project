@@ -12,7 +12,7 @@
 // }
 var numberPusher = function(number) {
   var numbersArray = [];
-var hello = numbersArray.push(number);
+  numbersArray.push(number);
   return numbersArray;
 }
 
@@ -20,28 +20,27 @@ var hello = numbersArray.push(number);
 var numberCounter = function(int) {
   var strings = [];
   for (var i = 1; i <= int; i++) {
-  strings =  numberPusher(i);
-
+    strings = numberPusher(strings);
+    strings = strings += i;
   };
-  return strings;
+  strings = strings.split("");
+  return strings
 };
 
-// LOGIC FOR PING PONGING
-// var pingPongArray = [];
-// var pingPong = function(input) {
-//   for (var i = 1; i <= input; i++) {
-//     if (i % 3 === 0) {
-//       pingPongArray = pingPongArray.push("Ping");
-//       } else if (i % 5 === 0) {
-//       pingPongArray = pingPongArray.push("Pong");
-//       } else if ((i % 3 === 0) && (i % 5 === 0)) {
-//       pingPongArray = pingPongArray.push("PingPong");
-//       } else {
-//        pingPongArray = pingPongArray.push("i");
-//       }
-//     };
-      // return pingPongArray;
-//   };
+// LOGIC FOR PING PONGING (push doesn't work)
 
-
-  // pingPongArray = pingPongArray.push("Ping");
+  // var pingPongArray = [];
+  // var pingPong = function(input) {
+  //   for (var i = 1; i <= input; i++) {
+  //     if (i % 3 === 0) {
+  //       pingPongArray = pingPongArray.push("Ping");
+  //       } else if (i % 5 === 0) {
+  //       pingPongArray = pingPongArray.push("Pong");
+  //       } else if ((i % 3 === 0) && (i % 5 === 0)) {
+  //       pingPongArray = pingPongArray.push("PingPong");
+  //       } else {
+  //        pingPongArray = pingPongArray.push("i");
+  //       }
+  //     };
+  //       return pingPongArray;
+  //   };
