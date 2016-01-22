@@ -1,30 +1,10 @@
-// var numberCounter = function(number) {
-// var numbersArray = [];
-//   for  (var i = 1; i <= number; i+= 1) {
-//   numbersArray =  numbersArray.push(i);
-//   }
-//   return numbers
-// };
-//
-// var arrayMaker = function (numbers) {
-//   var splitNumbers = numbers.split("");
-//   return splitNumbers;
-// }
-var numberPusher = function(number) {
-  var numbersArray = [];
-  numbersArray.push(number);
-  return numbersArray;
-}
-
 
 var numberCounter = function(int) {
   var strings = [];
   for (var i = 1; i <= int; i++) {
-    strings = numberPusher(strings);
-    strings = strings += i;
+    strings.push(i);
   };
-  strings = strings.split("");
-  return strings
+  return strings;
 };
 
 // LOGIC FOR PING PONGING (push doesn't work)
@@ -44,3 +24,25 @@ var numberCounter = function(int) {
   //     };
   //       return pingPongArray;
   //   };
+
+
+  $(document).ready(function() {
+    $('form#ping-pong').submit(function(event) {
+      var game = parseInt($('input#game').val());
+      var result = pingPong(game);
+
+
+      if (!game) {
+        alert("Please enter a positive integer");
+      }
+
+      $(".finish").text(result);
+
+
+      $("#result").show();
+
+      event.preventDefault();
+
+    })
+
+  });
