@@ -1,3 +1,11 @@
 #result {
   display: none;
 }
+
+.container {
+  max-width: 1000px;
+}
+
+.finish {
+  max-width: 1000px;
+}

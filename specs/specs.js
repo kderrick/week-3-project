@@ -7,8 +7,26 @@ describe("numberCounter", function(){
 
 
 describe("pingNumberCounter", function(){
-  it("will count to the number given one at a time, place in array, and replace numbers divisible by 3 with 'ping'", function() {
+  it("will count to the number given one at a time, place in array, and replace numbers divisible by 3 with 'Ping'", function() {
     expect(pingNumberCounter(3)).to.eql([1, 2, 'ping']);
+  });
+});
+
+describe("pongNumberCounter", function(){
+  it("will count to the number given one at a time, place in array, and replace numbers divisible by 5 with 'Pong'", function() {
+    expect(pongNumberCounter(5)).to.eql([1, 2, 3, 4, 'pong']);
+  });
+});
+
+describe("pingPongNumberCounter", function(){
+  it("will count to the number given one at a time, place in array, and replace numbers divisible by 15 with 'PingPong'", function() {
+    expect(pingPongNumberCounter(15)).to.eql([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 'pingpong']);
+  });
+});
+
+describe("finalPingPong", function(){
+  it("will count to the number given one at a time, place in array, and replace numbers divisible by 3 with 'Ping', disvisible by 5 with 'Pong' and disvisible by 15 with 'PingPong'", function() {
+    expect(finalPingPong(15)).to.eql([ 1, 2,' Ping', 4,' Pong',' Ping', 7, 8,' Ping',' Pong', 11,' Ping', 13, 14,' PingPong']);
   });
 });
 
